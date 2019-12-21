@@ -1,0 +1,110 @@
+ *{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.name{
+    font-weight: bolder;
+}
+
+.intro{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sub-header{
+    margin-bottom: 30px;
+}
+
+.mission{
+    border: solid black 1px;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.project{
+    text-align: center;
+}
+
+.p-img{
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.p-desc{
+    border: solid black 1px;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.p-refs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.ref > li{
+    line-height: 1.7;
+}
+
+.tech-label{
+    font-weight: bolder;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.foot > h4{
+    padding: 20px;
+    margin: 0;
+}
+
+.contact{
+    float: left
+}
+
+.contact > h3{
+    margin-bottom: 5px;
+}
+
+.prof{
+    border-radius: 50%;
+    width: 100px;
+}
+
+@media screen and (min-width: 600px) {
+    .contact-item{
+        display: inline-block;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    .contact-item > h4{
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .prof{
+        border-radius: 5px;
+    }
+
+}
