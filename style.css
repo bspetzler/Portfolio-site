@@ -30,18 +30,13 @@ ul{
     color: #FFE99A;
 }
 
-.link:hover{
-    cursor: pointer;
-    color: #1C304A;
-}
-
 .page-header{
     font-family: 'Montserrat', sans-serif;
 }
 
 .intro{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
     color: #FFE99A;
 }
 
@@ -61,11 +56,6 @@ ul{
     margin-bottom: 50px;
     line-height: 1.5;
     font-family: 'Lexend Giga', sans-serif;
-}
-
-.icon{
-    height: 10px;
-    width: auto;
 }
 
 .project{
