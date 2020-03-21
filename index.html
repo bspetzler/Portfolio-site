@@ -4,6 +4,7 @@
 <head>
     <title>Brenden Spetzler Portfolio</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -12,11 +13,13 @@
 
 <body class='body'>
     <header class='nav'>
-        <a class='name'>Brenden Spetzler</a>
         <nav class='top-nav'>
+            <input class='hamcheck' type='checkbox'>
+            <img class='ham' src=img/hamburger-menu.png alt='hamburger icon' height='30'>
+            <img class='cross' src=img/cross-menu.png alt='cross icon' height='30'>
             <ul id='link'>
-                <li> <a class='nav-link link' href='https://github.com/bspetzler'>Git Hub</a></li>
-                <li> <a class='nav-link link' href='https://www.linkedin.com/in/brenden-spetzler/'>Linked In</a></li>
+                <li> <a class='nav-link link' href='https://github.com/bspetzler'>GitHub</a></li>
+                <li> <a class='nav-link link' href='https://www.linkedin.com/in/brenden-spetzler/'>LinkedIn</a></li>
                 <li> <a class='nav-link link' href='https://soundcloud.com/b-spetz/tracks'>Soundcloud</a></li>
                 <li> <a class='nav-link link' href='https://www.instagram.com/bspetzmusic/'>Instagram</a></li>
             </ul>
@@ -24,22 +27,22 @@
     </header>
 
     <main>
-        <div class='intro'>
-            <h1 class='page-header'>Hi There and Welcome</h1>
-            <p class='sub-header'>I’m Brenden, a Fullstack Developer, Quality Manager, and Musician.</p>
+        <section class='intro'>
+            <h1 class='page-header'>Hi There! I'm Brenden</h1>
+            <h2 class='sub-header'>A Fullstack Developer, Quality Manager, and Musician.</h2>
             <p class='mission'>I am in the process of completing the Web Developer Bootcamp at Bloc. My passion for coding stems from my passion for creation. I have been a creator of music, art, and mechanical design since I was a small child. Coding has most recently become my newest form of expression.</p>
-        </div>
+        </section>
         <section class='project'>
-            <h2 class='p-header'>Quizz App</h2>
+            <h3 class='p-header'>Quiz App</h3>
             <img src='img/QApp.png' alt='Quiz-App' class='p-img'>
             <p class='p-desc'>This quiz guides you through a mysterious journey of uncertainty and wonder. Answer the questions if you can, and the website will give you feedback to let you know how you did. Try as many times as you want to achieve a perfect score! Functional and fun on desktop and mobile interfaces.</p>
             <div class='p-refs'>
                 <ul class='ref'>
                     <li class='tech-label'>Technologies Used:</li>
-                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/HTML5'>HTML5<img src=img/HTML5_Logo.png alt='HTML5 logo' height='30'></a></li>
-                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/JavaScript'>Javascript<img src=img/js-logo.png alt='JS logo' height='30'></a></li>
-                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/Ajax_(programming)'><img src=img/AJAX_logo.png alt='AJAX logo' height='30'></a></li>
-                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/CPanel'><img src=img/cPanel_logo.png alt='cPanel logo' height='30'></a></li>
+                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/HTML5'><img src=img/HTML5_Logo.png alt='HTML5 logo' height='90'></a></li>
+                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/JavaScript'><img src=img/js-logo.png alt='JS logo' height='90'></a></li>
+                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/Ajax_(programming)'><img src=img/AJAX_logo.png alt='AJAX logo' height='90'></a></li>
+                    <li> <a class='tech-item link' href='https://en.wikipedia.org/wiki/CPanel'><img src=img/cPanel_logo.png alt='cPanel logo' height='60'></a></li>
                 </ul>
 
                 <ul class='ref'>
@@ -49,21 +52,21 @@
 
                 <ul class='ref'>
                     <li class='tech-label'>GitHub Repo:</li>
-                    <li class='link'><a class='link' href='https://github.com/bspetzler/QuizApp'><img src=img/github-logo.png alt='github logo' height='30'></a></li>
+                    <li><a class='tech-item link' href='https://github.com/bspetzler/QuizApp'><img src=img/github-logo.png alt='github logo' height='90'></a></li>
                 </ul>
             </div>
         </section>
     
     <footer>
-        <div class='contact'>
-            <h3>Contact</h3>
+        <section class='contact'>
+            <h4 class='contact-title'>Contact</h4>
             <img src='img/headshot.jpeg' alt='Brenden Spetzler' class='prof'>
-            <div class='contact-item'>
+            <ul class='contact-item'>
                 <li>brenden.spetzler@colorado.edu</li>
-                <li><a class='con-link link' href='https://github.com/bspetzler'>Git Hub</a></li>
-                <li><a class='con-link link' href='https://www.linkedin.com/in/brenden-spetzler/'>Linked In</a></li>
-            </div>
-        </div>  
+                <li><a class='con-link link' href='https://github.com/bspetzler'>GitHub</a></li>
+                <li><a class='con-link link' href='https://www.linkedin.com/in/brenden-spetzler/'>LinkedIn</a></li>
+            </ul>
+        </section>  
     </footer>
 
     </main>

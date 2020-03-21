@@ -4,6 +4,8 @@
 
 html body{
     background: #044F99;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 ul{
@@ -12,124 +14,166 @@ ul{
     margin-top: 10px;
 }
 
-.name{
-    font-weight: bolder;
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 .top-nav{
-    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: #7C2419;
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    top: 0;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
 }
 
+.ham{
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.cross{
+    display: none;
+}
+
+.hamcheck{
+    z-index: 1;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
 .nav-link{
-    float: left;
-    clear: left;
+    display: none;
+}
+
+input:checked ~ ul .nav-link{
+    display: block;
     color: #FFE99A;
+}
+
+input:checked ~ ul{
+    background-color: #7C2419;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 150px;
+}
+
+input:checked ~ .ham{
+    display: none;
+}
+
+input:checked ~ .cross{
+    display: block;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+#link{
+    display: block;
 }
 
 .page-header{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lexend Giga', sans-serif;
 }
 
 .intro{
-    text-align: center;
-    margin-top: 150px;
+    margin: 0 auto;
+    margin-top: 200px;
     color: #FFE99A;
+}
+
+.page-header, .sub-header{
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 0;
 }
 
 .sub-header{
     margin-bottom: 30px;
-    font-family: 'Lexend Giga', sans-serif;
+    margin-top: 0;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mission{
     border: solid #7C2419 1px;
     border-style: ridge;
     border-width: thick;
-    max-width: 400px;
     height: auto;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 20px;
     line-height: 1.5;
     font-family: 'Lexend Giga', sans-serif;
 }
 
 .project{
-    text-align: center;
     color: #FFE99A;
 }
 
 .p-header{
+    text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
 }
 
 .p-img{
+    display: block;
+    margin: 0 auto;
     max-width: 80%;
     height: auto;
-    margin: 0 auto;
 }
 
 .p-desc{
     border: solid #7C2419 1px;
     border-style: ridge;
     border-width: thick;
-    width: 400px;
-    max-width: 90%;
     height: auto;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 20px;
     line-height: 1.5;
     font-family: 'Lexend Giga', sans-serif;
 }
 
 .p-refs{
-    display: flex;
-    flex-direction: column;
     margin-top: 10px;
 }
 
 .ref{
     margin-top: 30px;
+    text-align: center;
 }
 
 .tech-label{
+    margin-top: 70px;
     font-size: 20px;
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
 }
 
 .tech-item{
-    display: flex;
-    margin-top: 10px;
-    width: 150px;
-    margin: 0 auto;
-    margin-top: 10px;
-    line-height: 2.0;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
     font-family: 'Lexend Giga', sans-serif;
     color: #FFE99A;
 }
 
-.foot{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-}
-
-.foot > h4{
-    padding: 20px;
-    margin: 0;
-}
-
 .contact{
-    float: left;
+    margin-top: 50px;
+    text-align: center;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 50px;
+}
+
+.contact-title{
+    margin-bottom: 5px;
 }
 
 .con-link{
@@ -137,16 +181,49 @@ ul{
 }
 
 .contact-item > li{
-    margin-bottom: 5px;
+    margin: 0 10px 5px 10px;
     list-style: none;
 }
 
 .prof{
+    display: block;
+    margin: 0 auto;
     border-radius: 50%;
-    width: 100px;
+    width: 300px;
 }
 
 @media screen and (min-width: 600px) {
+    html body{
+        display: inline-block;
+    }
+    
+    .top-nav{
+        padding: 0;
+        margin: 0;
+        background-color: #7C2419;
+        position: fixed;
+        height: 45px;
+        width: 100%;
+        top: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 1.5;
+    }
+
+    .ham{
+        display: none;
+    }
+
+    #link{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .nav-link{
+        display: inline-block;
+        color: #FFE99A;
+    }
+    
     .contact-item{
         display: inline-block;
         padding-bottom: 10px;
