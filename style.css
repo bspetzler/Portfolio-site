@@ -27,9 +27,17 @@ ul{
 }
 
 .ham{
-    position: relative;
+    position: absolute;
     top: 7px;
     left: 7px;
+}
+
+.ham-label{
+    width: 0;
+    position: relative;
+    top: 3px;
+    left: 45px;
+    font-size: 25px;
 }
 
 .cross{
@@ -214,6 +222,10 @@ input:checked ~ .cross{
     }
 
     .ham{
+        display: none;
+    }
+
+    .ham-label{
         display: none;
     }
 
